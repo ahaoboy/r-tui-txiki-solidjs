@@ -90,7 +90,7 @@ class Snake {
 
 const snake = new Snake()
 
-export default function SnakeGame() {
+export default function App() {
   const { width: w, height: h } = getTerminalShape()
   const [body, setBody] = createSignal(snake.body)
   const [food, setFood] = createSignal({ x: -1, y: -1 })
@@ -190,4 +190,9 @@ export default function SnakeGame() {
     </Box>
   )
 }
-render(() => <SnakeGame />, { trim: true })
+render(() => <App />, {
+  write: s => {
+    console.clear()
+    process.stdout.write(s.trimEnd())
+  }
+})

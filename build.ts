@@ -8,7 +8,7 @@ build({
   outdir: "bundle",
   metafile: true,
   minify: true,
-  platform: 'node',
+  // platform: 'node',
   format: "iife",
   define: {
     "process.env.NODE_ENV": '\"production\"'

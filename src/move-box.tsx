@@ -45,4 +45,9 @@ export default function App() {
     </Box>
   )
 }
-render(() => <App />, { trim: true })
+render(() => <App />, {
+  write: s => {
+    console.clear()
+    process.stdout.write(s.trimEnd())
+  }
+})
