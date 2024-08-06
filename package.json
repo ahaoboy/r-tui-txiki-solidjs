@@ -1,0 +1,27 @@
+{
+  "name": "@r-tui/txiki-solidjs",
+  "version": "0.1.0",
+  "description": "@r-tui/txiki-solidjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "scripts": {
+    "build": "tsx ./build.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@r-tui/share": "0.1.6",
+    "@r-tui/solid": "0.1.2",
+    "@r-tui/terminal": "0.1.6",
+    "solid-js": "^1.8.19",
+    "txiki-node-polyfill": "^0.1.1"
+  },
+  "devDependencies": {
+    "@txikijs/types": "^24.6.0",
+    "@types/node": "^22.1.0",
+    "esbuild": "^0.23.0",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.4"
+  }
+}
