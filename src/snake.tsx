@@ -1,5 +1,6 @@
+import "txiki-node-polyfill"
 import { choice, Color } from "@r-tui/share"
-import { Box, onInput } from "@r-tui/solid"
+import { Box, onInput, render } from "@r-tui/solid"
 import { getTerminalShape } from "@r-tui/terminal"
 import { createSignal } from "solid-js"
 
@@ -189,3 +190,4 @@ export default function SnakeGame() {
     </Box>
   )
 }
+render(() => <SnakeGame />, { trim: true })

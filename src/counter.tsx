@@ -1,5 +1,6 @@
 import "txiki-node-polyfill"
-import { Box, render } from "@r-tui/solid"
+import { Box } from "@r-tui/solid"
+import { render } from "@r-tui/solid"
 import { createSignal } from "solid-js"
 
 export default function App() {

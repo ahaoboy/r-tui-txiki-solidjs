@@ -1,4 +1,5 @@
-import { Box, Down, Left, Right, Up, onInput } from "@r-tui/solid"
+import "txiki-node-polyfill"
+import { Box, Down, Left, Right, Up, onInput, render } from "@r-tui/solid"
 import { createSignal } from "solid-js"
 
 export default function App() {
@@ -44,3 +45,4 @@ export default function App() {
     </Box>
   )
 }
+render(() => <App />, { trim: true })
