@@ -11,9 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@r-tui/share": "0.1.6",
-    "@r-tui/solid": "0.1.2",
-    "@r-tui/terminal": "0.1.6",
+    "@r-tui/share": "0.1.7",
+    "@r-tui/solid": "0.1.4",
+    "@r-tui/terminal": "0.1.7",
     "solid-js": "^1.8.19",
     "txiki-node-polyfill": "^0.1.1"
   },

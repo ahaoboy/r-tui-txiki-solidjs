@@ -24,4 +24,10 @@ export default function App() {
     </Box>
   )
 }
-render(() => <App />, { trim: true })
+render(() => <App />, {
+  fps: 30,
+  write: s => {
+    console.clear()
+    process.stdout.write(s.trim())
+  }
+})
